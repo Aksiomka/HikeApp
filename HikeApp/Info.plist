@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Please provide access to use local network</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please give permission to access your location</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_hws-kb._tcp</string>
+		<string>_hws-kb._udp</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please provide access to your microphone</string>
+</dict>
+</plist>

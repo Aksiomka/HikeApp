@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA1DBD00291EE2E7000EB0C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBCFF291EE2E7000EB0C7 /* AppDelegate.swift */; };
+		DA1DBD09291EE2EA000EB0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1DBD08291EE2EA000EB0C7 /* Assets.xcassets */; };
+		DA1DBD0C291EE2EA000EB0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1DBD0A291EE2EA000EB0C7 /* LaunchScreen.storyboard */; };
+		DA1DBD15291EE3BF000EB0C7 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD14291EE3BF000EB0C7 /* ModeViewController.swift */; };
+		DA1DBD17291EE3E2000EB0C7 /* ModePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD16291EE3E2000EB0C7 /* ModePresenter.swift */; };
+		DA1DBD19291EE434000EB0C7 /* ModeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD18291EE434000EB0C7 /* ModeViewInput.swift */; };
+		DA1DBD1C291EF5A4000EB0C7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD1B291EF5A4000EB0C7 /* LocationManager.swift */; };
+		DA1DBD1E291EF726000EB0C7 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD1D291EF726000EB0C7 /* ConnectionManager.swift */; };
+		DA1DBD20291EF99B000EB0C7 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD1F291EF99B000EB0C7 /* AudioManager.swift */; };
+		DA1DBD55291FB507000EB0C7 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD54291FB507000EB0C7 /* TalkViewController.swift */; };
+		DA1DBD57291FB532000EB0C7 /* TalkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD56291FB532000EB0C7 /* TalkPresenter.swift */; };
+		DA1DBD59291FB53D000EB0C7 /* TalkViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD58291FB53D000EB0C7 /* TalkViewInput.swift */; };
+		DA1DBD5B291FC701000EB0C7 /* ModeModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD5A291FC701000EB0C7 /* ModeModuleAssembly.swift */; };
+		DA1DBD5E291FC771000EB0C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD5D291FC771000EB0C7 /* Router.swift */; };
+		DA1DBD60291FC77E000EB0C7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD5F291FC77E000EB0C7 /* AppCoordinator.swift */; };
+		DA1DBD62291FC7D4000EB0C7 /* TalkModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD61291FC7D4000EB0C7 /* TalkModuleAssembly.swift */; };
+		DA1DBD64291FCA44000EB0C7 /* ConnectionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD63291FCA44000EB0C7 /* ConnectionMode.swift */; };
+		DA1DBD66291FE821000EB0C7 /* TalkTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD65291FE821000EB0C7 /* TalkTableAdapter.swift */; };
+		DA1DBD68291FE866000EB0C7 /* ConnectedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBD67291FE866000EB0C7 /* ConnectedUser.swift */; };
+		DA1DBDFF2924DEA0000EB0C7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBDFE2924DEA0000EB0C7 /* UIView+Extension.swift */; };
+		DA1DBE012924DEBD000EB0C7 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE002924DEBD000EB0C7 /* UIApplication+Extension.swift */; };
+		DA1DBE032924E004000EB0C7 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE022924E004000EB0C7 /* DistanceCalculator.swift */; };
+		DA1DBE0729255178000EB0C7 /* TalkViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE0629255178000EB0C7 /* TalkViewOutput.swift */; };
+		DA1DBE09292551AA000EB0C7 /* ModeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE08292551A9000EB0C7 /* ModeViewOutput.swift */; };
+		DA1DBE0B29255220000EB0C7 /* ModeModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE0A29255220000EB0C7 /* ModeModuleOutput.swift */; };
+		DA1DBE1229255351000EB0C7 /* TalkModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1DBE1129255351000EB0C7 /* TalkModuleOutput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA1DBCFC291EE2E7000EB0C7 /* HikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1DBCFF291EE2E7000EB0C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA1DBD08291EE2EA000EB0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA1DBD0B291EE2EA000EB0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA1DBD0D291EE2EA000EB0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1DBD14291EE3BF000EB0C7 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		DA1DBD16291EE3E2000EB0C7 /* ModePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModePresenter.swift; sourceTree = "<group>"; };
+		DA1DBD18291EE434000EB0C7 /* ModeViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewInput.swift; sourceTree = "<group>"; };
+		DA1DBD1B291EF5A4000EB0C7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DA1DBD1D291EF726000EB0C7 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		DA1DBD1F291EF99B000EB0C7 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		DA1DBD54291FB507000EB0C7 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		DA1DBD56291FB532000EB0C7 /* TalkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkPresenter.swift; sourceTree = "<group>"; };
+		DA1DBD58291FB53D000EB0C7 /* TalkViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewInput.swift; sourceTree = "<group>"; };
+		DA1DBD5A291FC701000EB0C7 /* ModeModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeModuleAssembly.swift; sourceTree = "<group>"; };
+		DA1DBD5D291FC771000EB0C7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DA1DBD5F291FC77E000EB0C7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DA1DBD61291FC7D4000EB0C7 /* TalkModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkModuleAssembly.swift; sourceTree = "<group>"; };
+		DA1DBD63291FCA44000EB0C7 /* ConnectionMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionMode.swift; sourceTree = "<group>"; };
+		DA1DBD65291FE821000EB0C7 /* TalkTableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTableAdapter.swift; sourceTree = "<group>"; };
+		DA1DBD67291FE866000EB0C7 /* ConnectedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedUser.swift; sourceTree = "<group>"; };
+		DA1DBDFE2924DEA0000EB0C7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DA1DBE002924DEBD000EB0C7 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		DA1DBE022924E004000EB0C7 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		DA1DBE0629255178000EB0C7 /* TalkViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewOutput.swift; sourceTree = "<group>"; };
+		DA1DBE08292551A9000EB0C7 /* ModeViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewOutput.swift; sourceTree = "<group>"; };
+		DA1DBE0A29255220000EB0C7 /* ModeModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeModuleOutput.swift; sourceTree = "<group>"; };
+		DA1DBE1129255351000EB0C7 /* TalkModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkModuleOutput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA1DBCF9291EE2E7000EB0C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1DBCF3291EE2E7000EB0C7 = {
+			isa = PBXGroup;
+			children = (
+				DA1DBCFE291EE2E7000EB0C7 /* HikeApp */,
+				DA1DBCFD291EE2E7000EB0C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA1DBCFD291EE2E7000EB0C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBCFC291EE2E7000EB0C7 /* HikeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA1DBCFE291EE2E7000EB0C7 /* HikeApp */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD5C291FC757000EB0C7 /* App */,
+				DA1DBD1A291EF599000EB0C7 /* Managers */,
+				DA1DBE1029255328000EB0C7 /* Entities */,
+				DA1DBD13291EE358000EB0C7 /* Screens */,
+				DA1DBDFD2924DE87000EB0C7 /* Extensions */,
+				DA1DBD08291EE2EA000EB0C7 /* Assets.xcassets */,
+				DA1DBD0A291EE2EA000EB0C7 /* LaunchScreen.storyboard */,
+				DA1DBD0D291EE2EA000EB0C7 /* Info.plist */,
+			);
+			path = HikeApp;
+			sourceTree = "<group>";
+		};
+		DA1DBD13291EE358000EB0C7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD53291FB1A9000EB0C7 /* Talk */,
+				DA1DBD52291FB195000EB0C7 /* Mode */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DA1DBD1A291EF599000EB0C7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD1B291EF5A4000EB0C7 /* LocationManager.swift */,
+				DA1DBD1D291EF726000EB0C7 /* ConnectionManager.swift */,
+				DA1DBD1F291EF99B000EB0C7 /* AudioManager.swift */,
+				DA1DBE022924E004000EB0C7 /* DistanceCalculator.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DA1DBD52291FB195000EB0C7 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBE2029257429000EB0C7 /* Module */,
+				DA1DBE0D292552AC000EB0C7 /* Presenter */,
+				DA1DBE0C2925529E000EB0C7 /* View */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		DA1DBD53291FB1A9000EB0C7 /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBE212925743A000EB0C7 /* Module */,
+				DA1DBE0F29255308000EB0C7 /* Presenter */,
+				DA1DBE0E29255303000EB0C7 /* View */,
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		DA1DBD5C291FC757000EB0C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBCFF291EE2E7000EB0C7 /* AppDelegate.swift */,
+				DA1DBD5D291FC771000EB0C7 /* Router.swift */,
+				DA1DBD5F291FC77E000EB0C7 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA1DBDFD2924DE87000EB0C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBDFE2924DEA0000EB0C7 /* UIView+Extension.swift */,
+				DA1DBE002924DEBD000EB0C7 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA1DBE0C2925529E000EB0C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD14291EE3BF000EB0C7 /* ModeViewController.swift */,
+				DA1DBD18291EE434000EB0C7 /* ModeViewInput.swift */,
+				DA1DBE08292551A9000EB0C7 /* ModeViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA1DBE0D292552AC000EB0C7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD16291EE3E2000EB0C7 /* ModePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA1DBE0E29255303000EB0C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD54291FB507000EB0C7 /* TalkViewController.swift */,
+				DA1DBD58291FB53D000EB0C7 /* TalkViewInput.swift */,
+				DA1DBE0629255178000EB0C7 /* TalkViewOutput.swift */,
+				DA1DBD65291FE821000EB0C7 /* TalkTableAdapter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA1DBE0F29255308000EB0C7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD56291FB532000EB0C7 /* TalkPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA1DBE1029255328000EB0C7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD63291FCA44000EB0C7 /* ConnectionMode.swift */,
+				DA1DBD67291FE866000EB0C7 /* ConnectedUser.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DA1DBE2029257429000EB0C7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD5A291FC701000EB0C7 /* ModeModuleAssembly.swift */,
+				DA1DBE0A29255220000EB0C7 /* ModeModuleOutput.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DA1DBE212925743A000EB0C7 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DA1DBD61291FC7D4000EB0C7 /* TalkModuleAssembly.swift */,
+				DA1DBE1129255351000EB0C7 /* TalkModuleOutput.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA1DBCFB291EE2E7000EB0C7 /* HikeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1DBD10291EE2EA000EB0C7 /* Build configuration list for PBXNativeTarget "HikeApp" */;
+			buildPhases = (
+				DA1DBCF8291EE2E7000EB0C7 /* Sources */,
+				DA1DBCF9291EE2E7000EB0C7 /* Frameworks */,
+				DA1DBCFA291EE2E7000EB0C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikeApp;
+			productName = HikeApp;
+			productReference = DA1DBCFC291EE2E7000EB0C7 /* HikeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1DBCF4291EE2E7000EB0C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DA1DBCFB291EE2E7000EB0C7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DA1DBCF7291EE2E7000EB0C7 /* Build configuration list for PBXProject "HikeApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA1DBCF3291EE2E7000EB0C7;
+			productRefGroup = DA1DBCFD291EE2E7000EB0C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA1DBCFB291EE2E7000EB0C7 /* HikeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA1DBCFA291EE2E7000EB0C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1DBD0C291EE2EA000EB0C7 /* LaunchScreen.storyboard in Resources */,
+				DA1DBD09291EE2EA000EB0C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA1DBCF8291EE2E7000EB0C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1DBE032924E004000EB0C7 /* DistanceCalculator.swift in Sources */,
+				DA1DBD57291FB532000EB0C7 /* TalkPresenter.swift in Sources */,
+				DA1DBE09292551AA000EB0C7 /* ModeViewOutput.swift in Sources */,
+				DA1DBD15291EE3BF000EB0C7 /* ModeViewController.swift in Sources */,
+				DA1DBE0729255178000EB0C7 /* TalkViewOutput.swift in Sources */,
+				DA1DBD66291FE821000EB0C7 /* TalkTableAdapter.swift in Sources */,
+				DA1DBD62291FC7D4000EB0C7 /* TalkModuleAssembly.swift in Sources */,
+				DA1DBD68291FE866000EB0C7 /* ConnectedUser.swift in Sources */,
+				DA1DBD5B291FC701000EB0C7 /* ModeModuleAssembly.swift in Sources */,
+				DA1DBD59291FB53D000EB0C7 /* TalkViewInput.swift in Sources */,
+				DA1DBD00291EE2E7000EB0C7 /* AppDelegate.swift in Sources */,
+				DA1DBD20291EF99B000EB0C7 /* AudioManager.swift in Sources */,
+				DA1DBD60291FC77E000EB0C7 /* AppCoordinator.swift in Sources */,
+				DA1DBE0B29255220000EB0C7 /* ModeModuleOutput.swift in Sources */,
+				DA1DBD55291FB507000EB0C7 /* TalkViewController.swift in Sources */,
+				DA1DBD1C291EF5A4000EB0C7 /* LocationManager.swift in Sources */,
+				DA1DBDFF2924DEA0000EB0C7 /* UIView+Extension.swift in Sources */,
+				DA1DBE012924DEBD000EB0C7 /* UIApplication+Extension.swift in Sources */,
+				DA1DBD64291FCA44000EB0C7 /* ConnectionMode.swift in Sources */,
+				DA1DBD1E291EF726000EB0C7 /* ConnectionManager.swift in Sources */,
+				DA1DBD19291EE434000EB0C7 /* ModeViewInput.swift in Sources */,
+				DA1DBE1229255351000EB0C7 /* TalkModuleOutput.swift in Sources */,
+				DA1DBD17291EE3E2000EB0C7 /* ModePresenter.swift in Sources */,
+				DA1DBD5E291FC771000EB0C7 /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA1DBD0A291EE2EA000EB0C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1DBD0B291EE2EA000EB0C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA1DBD0E291EE2EA000EB0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA1DBD0F291EE2EA000EB0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA1DBD11291EE2EA000EB0C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XVB5ELWX3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HikeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.gladyshevasm.HikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA1DBD12291EE2EA000EB0C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XVB5ELWX3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HikeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.gladyshevasm.HikeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA1DBCF7291EE2E7000EB0C7 /* Build configuration list for PBXProject "HikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1DBD0E291EE2EA000EB0C7 /* Debug */,
+				DA1DBD0F291EE2EA000EB0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1DBD10291EE2EA000EB0C7 /* Build configuration list for PBXNativeTarget "HikeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1DBD11291EE2EA000EB0C7 /* Debug */,
+				DA1DBD12291EE2EA000EB0C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1DBCF4291EE2E7000EB0C7 /* Project object */;
+}
